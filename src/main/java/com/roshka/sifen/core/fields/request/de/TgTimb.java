@@ -24,7 +24,7 @@ public class TgTimb extends SifenObjectBase {
         SOAPElement gTimb = DE.addChildElement("gTimb");
         gTimb.addChildElement("iTiDE").setTextContent(String.valueOf(this.iTiDE.getVal()));
         gTimb.addChildElement("dDesTiDE").setTextContent(this.iTiDE.getDescripcion());
-        gTimb.addChildElement("dNumTim").setTextContent(String.valueOf(this.dNumTim));
+        gTimb.addChildElement("dNumTim").setTextContent(String.format("%08d", this.dNumTim));
         gTimb.addChildElement("dEst").setTextContent(this.dEst);
         gTimb.addChildElement("dPunExp").setTextContent(this.dPunExp);
         gTimb.addChildElement("dNumDoc").setTextContent(this.dNumDoc);

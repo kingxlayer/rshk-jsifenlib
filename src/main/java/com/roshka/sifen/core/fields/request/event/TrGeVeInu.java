@@ -22,7 +22,7 @@ public class TrGeVeInu extends SifenObjectBase {
     public void setupSOAPElements(SOAPElement gGroupTiEvt) throws SOAPException {
         SOAPElement rGeVeInu = gGroupTiEvt.addChildElement("rGeVeInu");
 
-        rGeVeInu.addChildElement("dNumTim").setTextContent(String.valueOf(this.dNumTim));
+        rGeVeInu.addChildElement("dNumTim").setTextContent(String.format("%08d", this.dNumTim));
         rGeVeInu.addChildElement("dEst").setTextContent(this.dEst);
         rGeVeInu.addChildElement("dPunExp").setTextContent(this.dPunExp);
         rGeVeInu.addChildElement("dNumIn").setTextContent(this.dNumIn);
