@@ -1,6 +1,5 @@
 .gradle/
 build/
-gradle/
 .idea/
 tmp/
 src/test/resources/test.properties
